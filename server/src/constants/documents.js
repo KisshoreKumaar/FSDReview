@@ -1,0 +1,37 @@
+export const DOCUMENT_TYPES = {
+  TENTH_MARKSHEET: 'TENTH_MARKSHEET',
+  TWELFTH_MARKSHEET: 'TWELFTH_MARKSHEET',
+  TRANSFER_CERT: 'TRANSFER_CERT',
+  COMMUNITY_CERT: 'COMMUNITY_CERT',
+  PHOTO: 'PHOTO',
+  SIGNATURE: 'SIGNATURE',
+  AADHAAR: 'AADHAAR',
+};
+
+export const DOCUMENT_TYPE_VALUES = Object.values(DOCUMENT_TYPES);
+
+/** Documents an application must carry before it can be submitted. */
+export const REQUIRED_DOCUMENT_TYPES = [
+  DOCUMENT_TYPES.TENTH_MARKSHEET,
+  DOCUMENT_TYPES.TWELFTH_MARKSHEET,
+  DOCUMENT_TYPES.PHOTO,
+  DOCUMENT_TYPES.SIGNATURE,
+];
+
+export const VERIFICATION_STATUS = {
+  PENDING: 'PENDING',
+  APPROVED: 'APPROVED',
+  REJECTED: 'REJECTED',
+};
+
+export const DOCUMENT_LABELS = {
+  TENTH_MARKSHEET: '10th Marksheet',
+  TWELFTH_MARKSHEET: '12th Marksheet',
+  TRANSFER_CERT: 'Transfer Certificate',
+  COMMUNITY_CERT: 'Community Certificate',
+  PHOTO: 'Passport Photo',
+  SIGNATURE: 'Signature',
+  AADHAAR: 'Aadhaar Card',
+};
+
+export default DOCUMENT_TYPES;
